@@ -73,7 +73,7 @@ const About = () => {
                     project with meticulous attention to detail.
                   </p>
                   <p>
-                    Beyond coding, I'm passionate about mentoring developers, contributing to 
+                    Beyond coding, I&apos;m passionate about mentoring developers, contributing to
                     open-source projects, and sharing knowledge with the tech community.
                   </p>
                 </div>

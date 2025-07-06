@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import { ExternalLink, Github, Calendar, ArrowRight } from 'lucide-react'
 import Image from 'next/image'
-import {PinContainer} from "../ui/3d-pin";
+// import {PinContainer} from "../ui/3d-pin";
 
 const Projects = () => {
   const [activeFilter, setActiveFilter] = useState('all')

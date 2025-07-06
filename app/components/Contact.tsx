@@ -93,11 +93,11 @@ const Contact = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-20">
             <h2 className="text-4xl sm:text-5xl font-bold mb-6">
-              Let's <span className="text-gradient">Connect</span>
+              Let&apos;s <span className="text-gradient">Connect</span>
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-ocean-400 to-white mx-auto mb-8"></div>
             <p className="text-xl text-white/80 max-w-3xl mx-auto leading-relaxed">
-              Ready to bring your ideas to life? Let's discuss your next project
+              Ready to bring your ideas to life? Let&apos;s discuss your next project
             </p>
           </div>
 
