@@ -1,0 +1,115 @@
+'use client'
+
+import { ArrowDown, Github, Linkedin, Mail, Download } from 'lucide-react'
+import {BackgroundGradientAnimation} from "@/app/ui/background-gradient-animation";
+// import { motion } from "motion/react"
+
+const Hero = () => {
+  const scrollToNext = () => {
+    const element = document.querySelector('#about')
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
+
+  return (
+    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
+      {/* Animated background elements */}
+
+      <div className="absolute inset-0 overflow-hidden">
+        <BackgroundGradientAnimation />
+      </div>
+
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="text-center animate-fade-in">
+          <div className="mb-8">
+            <div className="inline-block p-4 glass-effect rounded-full mb-6 ocean-glow">
+              <div className="w-20 h-20 bg-gradient-to-r from-ocean-400 to-white rounded-full flex items-center justify-center">
+                <span className="text-2xl font-bold text-ocean-950">AM</span>
+              </div>
+            </div>
+
+            <h1 className="text-5xl sm:text-7xl lg:text-8xl font-bold mb-6">
+              <span className="block text-white mb-2">Hello, I&apos;m</span>
+              <span className="block text-gradient animate-pulse-slow">
+                Alex Morgan
+              </span>
+            </h1>
+
+            <div className="max-w-4xl mx-auto mb-8">
+              <p className="text-2xl sm:text-3xl text-white/90 mb-4 font-light">
+                Full-Stack Developer
+              </p>
+              <p className="text-lg sm:text-xl text-white/70 mb-6 leading-relaxed">
+                Crafting exceptional digital experiences with cutting-edge technologies.
+                Specialized in React, Next.js, Node.js, and cloud architecture.
+              </p>
+              <p className="text-base text-white/60 max-w-2xl mx-auto">
+                Passionate about building scalable applications, beautiful user interfaces,
+                and robust backend systems that make a difference.
+              </p>
+            </div>
+          </div>
+
+          {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16 animate-slide-up">
+            <button
+              onClick={() => scrollToSection('#projects')}
+              className="btn-primary ocean-glow"
+            >
+              View My Work
+            </button>
+            <button
+              onClick={() => scrollToSection('#contact')}
+              className="btn-secondary"
+            >
+              Get In Touch
+            </button>
+            <button className="flex items-center justify-center px-6 py-4 glass-effect text-white font-medium rounded-lg hover:bg-white/10 transition-all duration-300">
+              <Download className="w-5 h-5 mr-2" />
+              Download CV
+            </button>
+          </div>
+
+          {/* Social Links */}
+          <div className="flex justify-center space-x-8 mb-16 animate-slide-up" style={{ animationDelay: '0.2s' }}>
+            {[
+              { icon: Github, href: '#', label: 'GitHub' },
+              { icon: Linkedin, href: '#', label: 'LinkedIn' },
+              { icon: Mail, href: '#', label: 'Email' },
+            ].map((social, index) => (
+              <a
+                key={index}
+                href={social.href}
+                className="p-4 glass-effect rounded-full text-white/70 hover:text-white transition-all duration-300 hover:scale-110 hover:bg-white/10 group"
+                aria-label={social.label}
+              >
+                <social.icon size={24} className="group-hover:scale-110 transition-transform duration-200" />
+              </a>
+            ))}
+          </div>
+
+          {/* Scroll indicator */}
+          <button
+            onClick={scrollToNext}
+            className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white/60 hover:text-white transition-all duration-300 animate-bounce group"
+          >
+            <div className="flex flex-col items-center">
+              <span className="text-sm mb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200">Scroll Down</span>
+              <ArrowDown size={24} />
+            </div>
+          </button>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+const scrollToSection = (href: string) => {
+  const element = document.querySelector(href)
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth' })
+  }
+}
+
+export default Hero

@@ -3,6 +3,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --font-geist-sans: 'Geist Sans', sans-serif;
+  --font-geist-mono: 'Geist Mono', monospace;
 }
 
 @theme inline {
@@ -10,6 +12,93 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  --color-ocean-50: #f0f9ff;
+  --color-ocean-100: #e0f2fe;
+  --color-ocean-200: #bae6fd;
+  --color-ocean-300: #7dd3fc;
+  --color-ocean-400: #38bdf8;
+  --color-ocean-500: #0ea5e9;
+  --color-ocean-600: #0284c7;
+  --color-ocean-700: #0369a1;
+
+  /* === BASE GRADIENT COLORS === */
+  --gradient-start: rgb(108, 0, 162);
+  --gradient-end: rgb(0, 17, 82);
+
+  /* === PRIMARY COLORS (INSPIRÉ DE ton jeu de couleurs) === */
+  --color-primary-50:  #e7f0ff;
+  --color-primary-100: #cce0ff;
+  --color-primary-200: #99c2ff;
+  --color-primary-300: #66a3ff;
+  --color-primary-400: #3385ff;
+  --color-primary-500: rgb(18, 113, 255);   /* firstColor */
+  --color-primary-600: #1356cc;
+  --color-primary-700: #103fa3;
+  --color-primary-800: #0c297a;
+  --color-primary-900: #081452;
+
+  /* === ACCENT COLORS === */
+  --color-accent-pink:  rgb(221, 74, 255);   /* secondColor */
+  --color-accent-cyan:  rgb(100, 220, 255);  /* thirdColor */
+  --color-accent-red:   rgb(200, 50, 50);    /* fourthColor */
+  --color-accent-yellow:rgb(180, 180, 50);   /* fifthColor */
+  --color-pointer:      rgb(140, 100, 255);  /* pointerColor */
+
+  /* === DARK THEME NEUTRALS (raccourci dérivé de ton dark précédent) === */
+  --color-dark-50:  #f9f9fb;
+  --color-dark-100: #f2f2f5;
+  --color-dark-200: #dcdde2;
+  --color-dark-300: #b5b6c2;
+  --color-dark-400: #888aa3;
+  --color-dark-500: #606385;
+  --color-dark-600: #464968;
+  --color-dark-700: #303351;
+  --color-dark-800: #1e2036;
+  --color-dark-900: #121427;
+  --color-dark-950: #0a0b14;
+
+  --animate-first: moveVertical 30s ease infinite;
+  --animate-second: moveInCircle 20s reverse infinite;
+  --animate-third: moveInCircle 40s linear infinite;
+  --animate-fourth: moveHorizontal 40s ease infinite;
+  --animate-fifth: moveInCircle 20s ease infinite;
+
+  @keyframes moveHorizontal {
+    0% {
+      transform: translateX(-50%) translateY(-10%);
+    }
+    50% {
+      transform: translateX(50%) translateY(10%);
+    }
+    100% {
+      transform: translateX(-50%) translateY(-10%);
+    }
+  }
+
+  @keyframes moveInCircle {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(180deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes moveVertical {
+    0% {
+      transform: translateY(-50%);
+    }
+    50% {
+      transform: translateY(50%);
+    }
+    100% {
+      transform: translateY(-50%);
+    }
+  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,8 +108,49 @@
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background: linear-gradient(
+            135deg,
+            var(--gradient-start) 0%,
+            var(--color-primary-500) 50%,
+            var(--gradient-end) 100%
+    );
+    background-attachment: fixed;
+    min-height: 100vh;
+    color: var(--color-dark-100);
+  }
+
+}
+
+@layer components {
+  .glass-effect {
+    @apply bg-white/5 backdrop-blur-lg border border-white/10;
+  }
+
+  .ocean-glow {
+    box-shadow: 0 0 30px rgba(14, 165, 233, 0.3);
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-ocean-300 via-white to-ocean-200 bg-clip-text text-transparent;
+  }
+
+  .btn-primary {
+    @apply px-8 py-4 bg-gradient-to-r from-ocean-600 to-ocean-500 text-white font-semibold rounded-lg hover:from-ocean-500 hover:to-ocean-400 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl;
+  }
+
+  .btn-secondary {
+    @apply px-8 py-4 border-2 border-white/20 text-white font-semibold rounded-lg hover:border-white hover:bg-white/10 transition-all duration-300;
+  }
+
+  .card-hover {
+    @apply transform hover:scale-105 hover:-translate-y-2 transition-all duration-300;
+  }
 }
