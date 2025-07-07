@@ -13,9 +13,8 @@ const Hero = () => {
   }
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
+    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-28">
       {/* Animated background elements */}
-
       <div className="absolute inset-0 overflow-hidden">
         <BackgroundGradientAnimation />
       </div>
@@ -23,11 +22,6 @@ const Hero = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center animate-fade-in">
           <div className="mb-8">
-            <div className="inline-block p-4 glass-effect rounded-full mb-6 ocean-glow">
-              <div className="w-20 h-20 bg-gradient-to-r from-ocean-400 to-white rounded-full flex items-center justify-center">
-                <span className="text-2xl font-bold text-ocean-950">AM</span>
-              </div>
-            </div>
 
             <h1 className="text-5xl sm:text-7xl lg:text-8xl font-bold mb-6">
               <span className="block text-white mb-2">Hello, I&apos;m</span>
