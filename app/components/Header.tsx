@@ -45,8 +45,11 @@ const Header = () => {
             <div className="p-2 bg-gradient-to-r from-ocean-500 to-ocean-400 rounded-lg">
               <Code2 className="w-6 h-6 text-white" />
             </div>
-            <h1 className="text-2xl font-bold text-gradient">
-              Alex Morgan
+            <h1 className="block sm:hidden text-2xl font-bold text-gradient">
+              R. F. Mandresy
+            </h1>
+            <h1 className="hidden sm:block text-2xl font-bold text-gradient">
+              Ranohavison Fortunah Mandresy
             </h1>
           </div>
           

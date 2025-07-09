@@ -24,23 +24,21 @@ const Hero = () => {
           <div className="mb-4 sm:mb-8">
 
             <h1 className="text-5xl sm:text-7xl lg:text-8xl font-bold mb-3 sm:mb-6">
-              <span className="block text-white mb-1 sm:mb-2">Hello, I&apos;m</span>
+              <span className="block text-white mb-1 sm:mb-2"> Bonjour, je suis</span>
               <span className="block text-gradient animate-pulse-slow">
-                Alex Morgan
+                Ranohavison Mandresy
               </span>
             </h1>
 
             <div className="max-w-4xl mx-auto mb-4 sm:mb-8">
               <p className="text-2xl sm:text-3xl text-white/90 mb-2 sm:mb-4 font-light">
-                Full-Stack Developer
+                Développeur Full-Stack Junior
               </p>
               <p className="text-lg sm:text-xl text-white/70 mb-3 sm:mb-6 leading-relaxed">
-                Crafting exceptional digital experiences with cutting-edge technologies.
-                Specialized in React, Next.js, Node.js, and cloud architecture.
+                Je conçois des expériences numériques exceptionnelles grâce aux technologies modernes. Spécialisé en React, Next.js, Node.js et architecture cloud.
               </p>
               <p className="text-base text-white/60 max-w-2xl mx-auto">
-                Passionate about building scalable applications, beautiful user interfaces,
-                and robust backend systems that make a difference.
+                Passionné par la création d’applications performantes, d’interfaces élégantes et de systèmes backend robustes qui ont un réel impact.
               </p>
             </div>
           </div>
