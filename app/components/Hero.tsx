@@ -55,7 +55,7 @@ const Hero = () => {
             </button>
             <button
               onClick={() => scrollToSection('#contact')}
-              className="btn-secondary"
+              className="btn-secondary hidden"
             >
               Get In Touch
             </button>
