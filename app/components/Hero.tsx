@@ -21,20 +21,20 @@ const Hero = () => {
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center animate-fade-in">
-          <div className="mb-8">
+          <div className="mb-4 sm:mb-8">
 
-            <h1 className="text-5xl sm:text-7xl lg:text-8xl font-bold mb-6">
-              <span className="block text-white mb-2">Hello, I&apos;m</span>
+            <h1 className="text-5xl sm:text-7xl lg:text-8xl font-bold mb-3 sm:mb-6">
+              <span className="block text-white mb-1 sm:mb-2">Hello, I&apos;m</span>
               <span className="block text-gradient animate-pulse-slow">
                 Alex Morgan
               </span>
             </h1>
 
-            <div className="max-w-4xl mx-auto mb-8">
-              <p className="text-2xl sm:text-3xl text-white/90 mb-4 font-light">
+            <div className="max-w-4xl mx-auto mb-4 sm:mb-8">
+              <p className="text-2xl sm:text-3xl text-white/90 mb-2 sm:mb-4 font-light">
                 Full-Stack Developer
               </p>
-              <p className="text-lg sm:text-xl text-white/70 mb-6 leading-relaxed">
+              <p className="text-lg sm:text-xl text-white/70 mb-3 sm:mb-6 leading-relaxed">
                 Crafting exceptional digital experiences with cutting-edge technologies.
                 Specialized in React, Next.js, Node.js, and cloud architecture.
               </p>
@@ -46,7 +46,7 @@ const Hero = () => {
           </div>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16 animate-slide-up">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-6 justify-center mb-8 sm:mb-16 animate-slide-up">
             <button
               onClick={() => scrollToSection('#projects')}
               className="btn-primary ocean-glow"
@@ -75,7 +75,7 @@ const Hero = () => {
               <a
                 key={index}
                 href={social.href}
-                className="p-4 glass-effect rounded-full text-white/70 hover:text-white transition-all duration-300 hover:scale-110 hover:bg-white/10 group"
+                className="p-2 text-sm sm:p-4 sm:text-xl glass-effect rounded-full text-white/70 hover:text-white transition-all duration-300 hover:scale-110 hover:bg-white/10 group"
                 aria-label={social.label}
               >
                 <social.icon size={24} className="group-hover:scale-110 transition-transform duration-200" />
