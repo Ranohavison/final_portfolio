@@ -116,12 +116,7 @@
   }
 
   body {
-    background: linear-gradient(
-            135deg,
-            var(--gradient-start) 0%,
-            var(--color-primary-500) 50%,
-            var(--gradient-end) 100%
-    );
+    background: var(--gradient-end);
     background-attachment: fixed;
     min-height: 100vh;
     color: var(--color-dark-100);

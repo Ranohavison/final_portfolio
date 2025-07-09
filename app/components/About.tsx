@@ -8,25 +8,25 @@ const About = () => {
       icon: <Code className="w-8 h-8" />,
       title: "Frontend Mastery",
       description: "React, Next.js, TypeScript, Tailwind CSS",
-      color: "from-ocean-400 to-ocean-300"
+      color: "bg-ocean-600"
     },
     {
       icon: <Database className="w-8 h-8" />,
       title: "Backend Excellence",
       description: "Node.js, Python, PostgreSQL, MongoDB",
-      color: "from-white to-gray-200"
+      color: "from-white to-primary-400"
     },
     {
       icon: <Globe className="w-8 h-8" />,
       title: "Cloud Architecture",
       description: "AWS, Docker, Kubernetes, Microservices",
-      color: "from-ocean-300 to-white"
+      color: "from-primary-300 to-white"
     },
     {
       icon: <Palette className="w-8 h-8" />,
       title: "UI/UX Design",
       description: "User-centered design and prototyping",
-      color: "from-gray-200 to-ocean-400"
+      color: "from-primary-200 to-primary-400"
     }
   ]
 
@@ -47,7 +47,7 @@ const About = () => {
             <h2 className="text-4xl sm:text-5xl font-bold mb-6">
               About <span className="text-gradient">Me</span>
             </h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-ocean-400 to-white mx-auto mb-8"></div>
+            <div className="w-24 h-1 bg-gradient-to-r from-primary-900 to-white mx-auto mb-8"></div>
             <p className="text-xl text-white/80 max-w-3xl mx-auto leading-relaxed">
               Passionate about creating digital solutions that make a real impact
             </p>
@@ -76,7 +76,7 @@ const About = () => {
                     Beyond coding, I&apos;m passionate about mentoring developers, contributing to
                     open-source projects, and sharing knowledge with the tech community.
                   </p>
-                </div>
+                </div>à
               </div>
 
               {/* Stats */}

@@ -39,7 +39,7 @@ const Header = () => {
         ? 'glass-effect shadow-2xl' 
         : 'bg-transparent'
     }`}>
-      <nav className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <nav className="container mx-auto px-4 sm:px-6 lg:px-44">
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center space-x-3">
             <div className="p-2 bg-gradient-to-r from-ocean-500 to-ocean-400 rounded-lg">

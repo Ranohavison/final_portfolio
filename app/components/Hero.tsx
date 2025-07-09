@@ -59,10 +59,10 @@ const Hero = () => {
             >
               Get In Touch
             </button>
-            <button className="flex items-center justify-center px-6 py-4 glass-effect text-white font-medium rounded-lg hover:bg-white/10 transition-all duration-300">
+            <a href={"/fichiers/CV.pdf"} className="flex items-center justify-center px-6 py-4 glass-effect text-white font-medium rounded-lg hover:bg-white/10 transition-all duration-300" download>
               <Download className="w-5 h-5 mr-2" />
               Download CV
-            </button>
+            </a>
           </div>
 
           {/* Social Links */}
@@ -86,7 +86,7 @@ const Hero = () => {
           {/* Scroll indicator */}
           <button
             onClick={scrollToNext}
-            className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white/60 hover:text-white transition-all duration-300 animate-bounce group"
+            className="absolute bottom-8 left-1/2 transform -translate-x-1/2 md:opacity-0 opacity-1 text-white/60 hover:text-white transition-all duration-300 animate-bounce group"
           >
             <div className="flex flex-col items-center">
               <span className="text-sm mb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200">Scroll Down</span>
