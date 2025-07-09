@@ -183,7 +183,7 @@ const Projects = () => {
               <button
                 key={filter.key}
                 onClick={() => setActiveFilter(filter.key)}
-                className={`px-6 py-3 rounded-lg font-semibold transition-all duration-300 ${
+                className={`px-6 py-3 w-[47.5%] sm:w-auto rounded-lg font-semibold transition-all duration-300 ${
                   activeFilter === filter.key
                     ? 'bg-gradient-to-r from-ocean-500 to-ocean-400 text-white shadow-lg'
                     : 'glass-effect text-white/70 hover:text-white hover:bg-white/10'

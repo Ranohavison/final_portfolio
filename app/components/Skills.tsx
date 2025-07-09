@@ -67,9 +67,9 @@ const Skills = () => {
               <button
                 key={index}
                 onClick={() => setActiveCategory(index)}
-                className={`px-8 py-4 rounded-xl font-semibold transition-all duration-300 ${
+                className={`px-8 py-4 rounded-xl font-semibold transition-all duration-300 w-full sm:w-auto ${
                   activeCategory === index
-                    ? 'bg-gradient-to-r from-ocean-500 to-ocean-400 text-white shadow-lg scale-105'
+                    ? 'bg-gradient-to-r from-ocean-500 to-ocean-400 text-white shadow-lg'
                     : 'glass-effect text-white/70 hover:text-white hover:bg-white/10'
                 }`}
               >
@@ -92,10 +92,10 @@ const Skills = () => {
                     <span className="text-lg font-semibold text-white">{skill.name}</span>
                     <span className="text-white/70 font-medium">{skill.level}%</span>
                   </div>
-                  
+
                   <div className="relative">
                     <div className="w-full bg-white/10 rounded-full h-3 overflow-hidden">
-                      <div 
+                      <div
                         className={`h-full bg-gradient-to-r ${skill.color} rounded-full transition-all duration-1000 ease-out relative`}
                         style={{ width: `${skill.level}%` }}
                       >
