@@ -13,28 +13,28 @@ const Hero = () => {
   }
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-28 sm:pt-36">
+    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-36">
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <BackgroundGradientAnimation />
       </div>
 
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="container mx-auto px-6 lg:px-8 relative z-10">
         <div className="text-center animate-fade-in">
-          <div className="mb-4 sm:mb-8">
+          <div className="mb-8">
 
-            <h1 className="text-5xl sm:text-7xl lg:text-8xl font-bold mb-3 sm:mb-6">
-              <span className="block text-white mb-1 sm:mb-2"> Bonjour, je suis</span>
-              <span className="block text-gradient animate-pulse-slow">
+            <h1 className="text-5xl text-7xl lg:text-8xl font-bold mb-3 mb-6">
+              <span className="block text-white mb-1 mb-2"> Bonjour, je suis</span>
+              <span className="block text-gradient animate-pulse">
                 Ranohavison Mandresy
               </span>
             </h1>
 
-            <div className="max-w-4xl mx-auto mb-4 sm:mb-8">
-              <p className="text-2xl sm:text-3xl text-white/90 mb-2 sm:mb-4 font-light">
+            <div className="max-w-4xl mx-auto mb-8">
+              <p className="text-3xl text-white/90 mb-4 font-light">
                 Développeur Full-Stack Junior
               </p>
-              <p className="text-lg sm:text-xl text-white/70 mb-3 sm:mb-6 leading-relaxed">
+              <p className="text-xl text-white/70 mb-6 leading-relaxed">
                 Je conçois des expériences numériques exceptionnelles grâce aux technologies modernes. Spécialisé en React, Next.js, Node.js et architecture cloud.
               </p>
               <p className="text-base text-white/60 max-w-2xl mx-auto">
@@ -44,7 +44,7 @@ const Hero = () => {
           </div>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-3 sm:gap-6 justify-center mb-8 sm:mb-16 animate-slide-up">
+          <div className="flex flex-row gap-6 justify-center mb-16 animate-slide-up">
             <button
               onClick={() => scrollToSection('#projects')}
               className="btn-primary ocean-glow"
@@ -73,7 +73,7 @@ const Hero = () => {
               <a
                 key={index}
                 href={social.href}
-                className="p-2 text-sm sm:p-4 sm:text-xl glass-effect rounded-full text-white/70 hover:text-white transition-all duration-300 hover:scale-110 hover:bg-white/10 group"
+                className="p-4 text-xl glass-effect rounded-full text-white/70 hover:text-white transition-all duration-300 hover:scale-110 hover:bg-white/10 group"
                 aria-label={social.label}
               >
                 <social.icon size={24} className="group-hover:scale-110 transition-transform duration-200" />
@@ -84,7 +84,7 @@ const Hero = () => {
           {/* Scroll indicator */}
           <button
             onClick={scrollToNext}
-            className="absolute bottom-8 left-1/2 transform -translate-x-1/2 md:opacity-0 opacity-1 text-white/60 hover:text-white transition-all duration-300 animate-bounce group"
+            className="absolute bottom-2 hidden sm:block left-1/2 transform -translate-x-1/2 text-white/60 hover:text-white transition-all duration-300 animate-bounce group"
           >
             <div className="flex flex-col items-center">
               <span className="text-sm mb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200">Scroll Down</span>

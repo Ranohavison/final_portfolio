@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { Menu, X, Code2 } from 'lucide-react'
+import { Menu, X } from 'lucide-react'
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -21,7 +21,7 @@ const Header = () => {
     { href: '#about', label: 'A propos' },
     { href: '#skills', label: 'Atouts' },
     { href: '#projects', label: 'Projets' },
-    { href: '#experience', label: 'Experience' },
+    // { href: '#experience', label: 'Experience' },
     // { href: '#contact', label: 'Contact' },
   ]
 
@@ -42,9 +42,6 @@ const Header = () => {
       <nav className="container mx-auto px-4 sm:px-6 lg:px-44">
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center space-x-3">
-            <div className="p-2 bg-gradient-to-r from-ocean-500 to-ocean-400 rounded-lg">
-              <Code2 className="w-6 h-6 text-white" />
-            </div>
             <h1 className="block sm:hidden text-2xl font-bold text-gradient">
               R. F. Mandresy
             </h1>
@@ -83,7 +80,7 @@ const Header = () => {
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <div className="md:hidden animate-fade-in">
-            <div className="px-4 pt-4 pb-6 space-y-2 glass-effect rounded-lg mt-2">
+            <div className="px-4 pt-4 pb-6 mb-4 space-y-2 glass-effect rounded-lg mt-2">
               {navItems.map((item) => (
                 <button
                   key={item.href}

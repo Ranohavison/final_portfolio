@@ -37,7 +37,6 @@ const Skills = () => {
       skills: [
         // { name: "AWS", level: 85, color: "from-orange-500 to-yellow-400" },
         { name: "Docker", level: 83, color: "from-blue-600 to-blue-400" },
-        { name: "Git", level: 83, color: "from-gray-600 to-gray-400" },
         // { name: "Kubernetes", level: 75, color: "from-blue-700 to-purple-600" },
         // { name: "CI/CD", level: 88, color: "from-purple-600 to-pink-500" },
         // { name: "Terraform", level: 70, color: "from-purple-700 to-purple-500" },
