@@ -55,7 +55,7 @@ const Skills = () => {
             <h2 className="text-4xl sm:text-5xl font-bold mb-6">
               Technical <span className="text-gradient">Expertise</span>
             </h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-ocean-400 to-white mx-auto mb-8"></div>
+            <div className="w-24 h-1 bg-gradient-to-r from-primary-900 to-white mx-auto mb-8"></div>
             <p className="text-xl text-white/80 max-w-3xl mx-auto leading-relaxed">
               Comprehensive skill set spanning modern web technologies and cloud platforms
             </p>
@@ -69,7 +69,7 @@ const Skills = () => {
                 onClick={() => setActiveCategory(index)}
                 className={`px-8 py-4 rounded-xl font-semibold transition-all duration-300 w-full sm:w-auto ${
                   activeCategory === index
-                    ? 'bg-gradient-to-r from-ocean-500 to-ocean-400 text-white shadow-lg'
+                    ? 'bg-gradient-to-r from-ocean-600 to-ocean-500 text-white shadow-lg'
                     : 'glass-effect text-white/70 hover:text-white hover:bg-white/10'
                 }`}
               >

@@ -17,12 +17,12 @@ const Header = () => {
   }, [])
 
   const navItems = [
-    { href: '#home', label: 'Home' },
-    { href: '#about', label: 'About' },
-    { href: '#skills', label: 'Skills' },
-    { href: '#projects', label: 'Projects' },
+    { href: '#home', label: 'Accueil' },
+    { href: '#about', label: 'A propos' },
+    { href: '#skills', label: 'Atouts' },
+    { href: '#projects', label: 'Projets' },
     { href: '#experience', label: 'Experience' },
-    { href: '#contact', label: 'Contact' },
+    // { href: '#contact', label: 'Contact' },
   ]
 
   const scrollToSection = (href: string) => {

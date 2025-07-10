@@ -73,7 +73,7 @@ const Experience = () => {
             <h2 className="text-4xl sm:text-5xl font-bold mb-6">
               Professional <span className="text-gradient">Journey</span>
             </h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-ocean-400 to-white mx-auto mb-8"></div>
+            <div className="w-24 h-1 bg-gradient-to-r from-primary-900 to-white mx-auto mb-8"></div>
             <p className="text-xl text-white/80 max-w-3xl mx-auto leading-relaxed">
               My career progression and key achievements in software development
             </p>
@@ -81,12 +81,12 @@ const Experience = () => {
 
           <div className="relative">
             {/* Timeline line */}
-            <div className="absolute left-8 md:left-1/2 transform md:-translate-x-px top-0 bottom-0 w-0.5 bg-gradient-to-b from-ocean-400 via-white to-ocean-400"></div>
+            <div className="absolute left-8 md:left-1/2 transform md:-translate-x-px top-0 bottom-0 w-0.5 bg-gradient-to-b from-ocean-600 via-white to-ocean-500"></div>
 
             {experiences.map((exp, index) => (
               <div key={index} className="relative mb-16 last:mb-0">
                 {/* Timeline dot */}
-                <div className="absolute left-6 md:left-1/2 transform md:-translate-x-1/2 w-6 h-6 bg-gradient-to-r from-ocean-400 to-white rounded-full border-4 border-ocean-950 shadow-lg"></div>
+                <div className="absolute left-6 md:left-1/2 transform md:-translate-x-1/2 w-6 h-6 bg-gradient-to-r from-ocean-500 to-white rounded-full border-4 border-ocean-950 shadow-lg"></div>
 
                 <div className={`ml-20 md:ml-0 md:w-1/2 ${
                   index % 2 === 0 ? 'md:pr-16' : 'md:ml-auto md:pl-16'
@@ -123,7 +123,7 @@ const Experience = () => {
                     <ul className="text-white/80 mb-6 space-y-3">
                       {exp.description.map((item, itemIndex) => (
                         <li key={itemIndex} className="flex items-start">
-                          <span className="text-ocean-300 mr-3 mt-1.5 flex-shrink-0">▸</span>
+                          <span className="text-ocean-400 mr-3 mt-1.5 flex-shrink-0">▸</span>
                           <span className="leading-relaxed">{item}</span>
                         </li>
                       ))}

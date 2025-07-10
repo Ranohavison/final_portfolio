@@ -102,7 +102,7 @@ const Projects = () => {
             <h2 className="text-4xl sm:text-5xl font-bold mb-6">
               Featured <span className="text-gradient">Projects</span>
             </h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-ocean-400 to-white mx-auto mb-8"></div>
+            <div className="w-24 h-1 bg-gradient-to-r from-primary-900 to-white mx-auto mb-8"></div>
             <p className="text-xl text-white/80 max-w-3xl mx-auto leading-relaxed">
               Showcase of innovative solutions and technical achievements
             </p>
@@ -127,7 +127,7 @@ const Projects = () => {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-ocean-950/80 via-transparent to-transparent"></div>
                     <div className="absolute top-4 right-4">
-                      <span className="px-3 py-1 bg-gradient-to-r from-ocean-500 to-ocean-400 text-white text-sm font-semibold rounded-full">
+                      <span className="px-3 py-1 bg-gradient-to-r from-ocean-600 to-ocean-500 text-white text-sm font-semibold rounded-full">
                         Featured
                       </span>
                     </div>
@@ -158,7 +158,7 @@ const Projects = () => {
                     <div className="flex space-x-4">
                       <a 
                         href={project.demoUrl}
-                        className="flex items-center px-6 py-3 bg-gradient-to-r from-ocean-500 to-ocean-400 text-white font-semibold rounded-lg hover:from-ocean-400 hover:to-ocean-300 transition-all duration-300 group"
+                        className="flex items-center px-6 py-3 bg-gradient-to-r from-ocean-600 to-ocean-500 text-white font-semibold rounded-lg hover:from-ocean-700 hover:to-ocean-600 transition-colors duration-300 group"
                       >
                         <ExternalLink className="w-4 h-4 mr-2 group-hover:scale-110 transition-transform" />
                         Live Demo
@@ -185,7 +185,7 @@ const Projects = () => {
                 onClick={() => setActiveFilter(filter.key)}
                 className={`px-6 py-3 w-[47.5%] sm:w-auto rounded-lg font-semibold transition-all duration-300 ${
                   activeFilter === filter.key
-                    ? 'bg-gradient-to-r from-ocean-500 to-ocean-400 text-white shadow-lg'
+                    ? 'bg-gradient-to-r from-ocean-600 to-ocean-500 text-white shadow-lg'
                     : 'glass-effect text-white/70 hover:text-white hover:bg-white/10'
                 }`}
               >
@@ -212,7 +212,7 @@ const Projects = () => {
                   <div className="absolute inset-0 bg-gradient-to-t from-ocean-950/60 to-transparent"></div>
                   {project.featured && (
                     <div className="absolute top-3 right-3">
-                      <span className="px-2 py-1 bg-gradient-to-r from-ocean-500 to-ocean-400 text-white text-xs font-semibold rounded-full">
+                      <span className="px-2 py-1 bg-gradient-to-r from-ocean-600 to-ocean-500 text-white text-xs font-semibold rounded-full">
                         ⭐
                       </span>
                     </div>
@@ -251,7 +251,7 @@ const Projects = () => {
                   <div className="flex space-x-3">
                     <a 
                       href={project.demoUrl}
-                      className="flex items-center text-ocean-300 hover:text-ocean-200 transition-colors duration-200 text-sm group"
+                      className="flex items-center text-ocean-400 hover:text-ocean-300 transition-colors duration-200 text-sm group"
                     >
                       <ExternalLink className="w-3 h-3 mr-1 group-hover:scale-110 transition-transform" />
                       Demo

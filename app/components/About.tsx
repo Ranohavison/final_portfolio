@@ -14,19 +14,19 @@ const About = () => {
       icon: <Database className="w-8 h-8" />,
       title: "Backend Excellence",
       description: "Node.js, Python, PostgreSQL, MongoDB",
-      color: "from-white to-primary-400"
+      color: "bg-ocean-600"
     },
     {
       icon: <Globe className="w-8 h-8" />,
       title: "Cloud Architecture",
       description: "AWS, Docker, Kubernetes, Microservices",
-      color: "from-primary-300 to-white"
+      color: "bg-ocean-600"
     },
     {
       icon: <Palette className="w-8 h-8" />,
       title: "UI/UX Design",
       description: "User-centered design and prototyping",
-      color: "from-primary-200 to-primary-400"
+      color: "bg-ocean-600"
     }
   ]
 
