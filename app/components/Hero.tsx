@@ -13,7 +13,7 @@ const Hero = () => {
   }
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-36">
+    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-32">
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <BackgroundGradientAnimation />
@@ -23,28 +23,28 @@ const Hero = () => {
         <div className="text-center animate-fade-in">
           <div className="mb-8">
 
-            <h1 className="text-7xl lg:text-8xl font-bold mb-6">
+            <h1 className="text-7xl lg:text-8xl font-bold mb-8 sm:mb-12">
               <span className="block text-white mb-2"> Bonjour, je suis</span>
               <span className="block text-gradient animate-pulse">
                 Ranohavison Mandresy
               </span>
             </h1>
 
-            <div className="max-w-4xl mx-auto mb-8">
-              <p className="text-3xl text-white/90 mb-4 font-light">
+            <div className="max-w-4xl mx-auto mb-8 sm:mb-12">
+              <p className="text-4xl text-white/90 mb-4 font-light">
                 Développeur Full-Stack Junior
               </p>
-              <p className="text-xl text-white/70 mb-6 leading-relaxed">
+              <p className="text-2xl text-white/70 mb-6 leading-relaxed">
                 Je conçois des expériences numériques exceptionnelles grâce aux technologies modernes. Spécialisé en React, Next.js, Node.js et architecture cloud.
               </p>
-              <p className="text-base text-white/60 max-w-2xl mx-auto">
+              <p className="text-2xl text-white/60 max-w-2xl mx-auto">
                 Passionné par la création d’applications performantes, d’interfaces élégantes et de systèmes backend robustes qui ont un réel impact.
               </p>
             </div>
           </div>
 
           {/* CTA Buttons */}
-          <div className="flex flex-row gap-6 justify-center mb-16 animate-slide-up">
+          <div className="flex flex-row gap-6 justify-center mb-7 sm:mb-16 text-xl animate-slide-up">
             <button
               onClick={() => scrollToSection('#projects')}
               className="btn-primary ocean-glow"
@@ -57,7 +57,7 @@ const Hero = () => {
             >
               Get In Touch
             </button>
-            <a href={"/fichiers/CV.pdf"} className="flex items-center justify-center px-6 py-4 glass-effect text-white font-medium rounded-lg hover:bg-white/10 transition-all duration-300" download>
+            <a href={"/fichiers/CV.pdf"} className="flex items-center justify-center px-6 py-4 glass-effect text-white font-medium text-xl rounded-lg hover:bg-white/10 transition-all duration-300" download>
               <Download className="w-5 h-5 mr-2" />
               Telecharger CV
             </a>
@@ -84,7 +84,7 @@ const Hero = () => {
           {/* Scroll indicator */}
           <button
             onClick={scrollToNext}
-            className="absolute bottom-2 hidden sm:block left-1/2 transform -translate-x-1/2 text-white/60 hover:text-white transition-all duration-300 animate-bounce group"
+            className="absolute bottom-[0.01rem] hidden sm:block left-1/2 transform -translate-x-1/2 text-white/60 hover:text-white transition-all duration-300 animate-bounce group"
           >
             <div className="flex flex-col items-center">
               <span className="text-sm mb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200">Scroll Down</span>

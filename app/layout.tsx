@@ -1,37 +1,28 @@
-import type { Metadata } from "next";
-// import { Geist, Geist_Mono } from "next/font/google";
+import { Metadata } from "next";
 import "./globals.css";
-
-// const geistSans = Geist({
-//   variable: "--font-geist-sans",
-//   subsets: ["latin"],
-// });
-//
-// const geistMono = Geist_Mono({
-//   variable: "--font-geist-mono",
-//   subsets: ["latin"],
-// });
 
 export const metadata: Metadata = {
   title: "R. F. Mandresy",
-  description: "Creer par R. F. Mandresy",
+  description: "Créé par R. F. Mandresy",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      {/*<body*/}
-      {/*  className={`${geistSans.variable} ${geistMono.variable} bg-ocean-950 text-white antialiased`}*/}
-      {/*>*/}
-      <body
-          className={`bg-ocean-950 text-white antialiased`}
-      >
-        {children}
-      </body>
+    <html lang="fr">
+    <head>
+      {/* Préconnexion pour optimiser le chargement des polices */}
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+
+      {/* Chargement des polices recommandées */}
+      <link
+        href="https://fonts.googleapis.com/css2?family=Garamond&family=Roboto+Slab&family=Albert+Sans&family=Montserrat&family=Lora&display=swap"
+        rel="stylesheet"
+      />
+    </head>
+    <body className="bg-ocean-950 text-white antialiased font-serif text-xl">
+    {children}
+    </body>
     </html>
   );
 }

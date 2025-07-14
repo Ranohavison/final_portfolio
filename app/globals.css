@@ -10,8 +10,8 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  /*--font-sans: var(--font-geist-sans);*/
-  /*--font-mono: var(--font-geist-mono);*/
+  /*--font-dmserif: var(--font-dmserif);*/
+  /*--font-myfont: var(--font-myfont);*/
 
   --color-ocean-50: #f0f9ff;
   --color-ocean-100: #e0f2fe;
@@ -116,10 +116,15 @@
   }
 
   body {
+    font-family: 'DM Serif Display', serif;
     background: var(--gradient-end);
     background-attachment: fixed;
     min-height: 100vh;
     color: var(--color-dark-100);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
   }
 
 }
