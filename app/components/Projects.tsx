@@ -1,90 +1,14 @@
 'use client'
 
 import { useState } from 'react'
-import { ExternalLink, Github, Calendar, ArrowRight } from 'lucide-react'
+import { ExternalLink, Calendar, ArrowRight } from 'lucide-react'
 import Image from 'next/image'
+import {filters, projects} from "@/app/data/projects";
+import {FaGithub} from "react-icons/fa";
 // import {PinContainer} from "../ui/3d-pin";
 
 const Projects = () => {
   const [activeFilter, setActiveFilter] = useState('all')
-
-  const projects = [
-    {
-      title: "Gestion d'Examen CEPE",
-      description: "Application simple et sécurisée pour la gestion des résultats du CEPE, permettant d’enregistrer, consulter et exporter les notes individuelles des élèves avec précision. Interface claire et efficace dédiée aux administrateurs.",
-      image: "/images/screenshoot_3.png",
-      technologies: ["Codeigniter", "Angular", "MySql", "TailwindCSS"],
-      category: "fullstack",
-      demoUrl: "#",
-      githubUrl: "https://github.com/Ranohavison/cepeProject",
-      date: "2024",
-      featured: true
-    },
-    {
-      title: "Gestion d'Employées",
-      description: "Intelligent analytics platform with machine learning insights, real-time data visualization, and predictive analytics for business intelligence.",
-      image: "/images/employe_acceil.png",
-      technologies: ["Laravel", "VueJs", "MySql", "TailwindCSS", "Daisyui"],
-      category: "frontend",
-      demoUrl: "#",
-      githubUrl: "https://github.com/Ranohavison/vueJs_employe",
-      date: "2024",
-      featured: true
-    },
-    {
-      title: "Microservices Architecture",
-      description: "Scalable microservices ecosystem with API gateway, service discovery, and distributed monitoring. Handles millions of requests daily.",
-      image: "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800",
-      technologies: ["Node.js", "Docker", "Kubernetes", "MongoDB", "RabbitMQ"],
-      category: "backend",
-      demoUrl: "#",
-      githubUrl: "#",
-      date: "2023",
-      featured: false
-    },
-    {
-      title: "Real-Time Collaboration Tool",
-      description: "Team collaboration platform with real-time editing, video conferencing, and project management features. Built for remote teams.",
-      image: "https://images.pexels.com/photos/8849297/pexels-photo-8849297.jpeg?auto=compress&cs=tinysrgb&w=800",
-      technologies: ["Vue.js", "Socket.io", "WebRTC", "Express", "PostgreSQL"],
-      category: "fullstack",
-      demoUrl: "#",
-      githubUrl: "#",
-      date: "2023",
-      featured: false
-    },
-    {
-      title: "Mobile Banking App",
-      description: "Secure mobile banking application with biometric authentication, real-time transactions, and comprehensive financial management tools.",
-      image: "https://images.pexels.com/photos/4968964/pexels-photo-4968964.jpeg?auto=compress&cs=tinysrgb&w=800",
-      technologies: ["React Native", "Node.js", "PostgreSQL", "JWT", "Plaid"],
-      category: "mobile",
-      demoUrl: "#",
-      githubUrl: "#",
-      date: "2023",
-      featured: true
-    },
-    {
-      title: "Cloud Infrastructure Automation",
-      description: "Infrastructure as Code solution for automated cloud deployment, monitoring, and scaling across multiple cloud providers.",
-      image: "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800",
-      technologies: ["Terraform", "AWS", "Docker", "Ansible", "Prometheus"],
-      category: "devops",
-      demoUrl: "#",
-      githubUrl: "#",
-      date: "2022",
-      featured: false
-    }
-  ]
-
-  const filters = [
-    { key: 'all', label: 'All Projects' },
-    { key: 'fullstack', label: 'Full-Stack' },
-    { key: 'frontend', label: 'Frontend' },
-    { key: 'backend', label: 'Backend' },
-    { key: 'mobile', label: 'Mobile' },
-    { key: 'devops', label: 'DevOps' }
-  ]
 
   const filteredProjects = activeFilter === 'all' 
     ? projects 
@@ -100,17 +24,17 @@ const Projects = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-20">
             <h2 className="text-4xl sm:text-5xl font-bold mb-6">
-              Featured <span className="text-gradient">Projects</span>
+              Projets <span className="text-gradient">Phare</span>
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-primary-900 to-white mx-auto mb-8"></div>
             <p className="text-xl text-white/80 max-w-3xl mx-auto leading-relaxed">
-              Showcase of innovative solutions and technical achievements
+              Présentation des solutions innovantes et des réalisations techniques marquantes
             </p>
           </div>
 
           {/* Featured Projects */}
           <div className="mb-20">
-            <h3 className="text-2xl font-bold text-white mb-8 text-center">🌟 Highlighted Work</h3>
+            <h3 className="text-2xl font-bold text-white mb-8 text-center">🌟 Projets en Vedette</h3>
             <div className="grid lg:grid-cols-2 gap-8">
               {featuredProjects.slice(0, 2).map((project, index) => (
                 <div 
@@ -156,18 +80,24 @@ const Projects = () => {
                     </div>
                     
                     <div className="flex space-x-4">
-                      <a 
-                        href={project.demoUrl}
-                        className="flex items-center px-6 py-3 bg-gradient-to-r from-ocean-600 to-ocean-500 text-white font-semibold rounded-lg hover:from-ocean-700 hover:to-ocean-600 transition-colors duration-300 group"
+                      <a
+                        href={project.demoUrl !== "#" ? project.demoUrl : undefined}
+                        onClick={project.demoUrl === "#" ? (e) => e.preventDefault() : undefined}
+                        className={`flex items-center px-6 py-3 font-semibold rounded-lg transition-colors duration-300 group
+    ${project.demoUrl === "#"
+                          ? "bg-primary-600 cursor-not-allowed text-gray-500" // style disabled
+                          : "bg-gradient-to-r from-ocean-600 to-ocean-500 text-white hover:from-ocean-700 hover:to-ocean-600"
+                        }`}
                       >
                         <ExternalLink className="w-4 h-4 mr-2 group-hover:scale-110 transition-transform" />
                         Live Demo
                       </a>
+
                       <a 
                         href={project.githubUrl}
                         className="flex items-center px-6 py-3 glass-effect text-white font-semibold rounded-lg hover:bg-white/20 transition-all duration-300 group"
                       >
-                        <Github className="w-4 h-4 mr-2 group-hover:scale-110 transition-transform" />
+                        <FaGithub className="w-4 h-4 mr-2 group-hover:scale-110 transition-transform" />
                         Code
                       </a>
                     </div>
@@ -249,18 +179,24 @@ const Projects = () => {
                   </div>
                   
                   <div className="flex space-x-3">
-                    <a 
-                      href={project.demoUrl}
-                      className="flex items-center text-ocean-400 hover:text-ocean-300 transition-colors duration-200 text-sm group"
+                    <a
+                      href={project.demoUrl !== "#" ? project.demoUrl : undefined}
+                      onClick={project.demoUrl === "#" ? (e) => e.preventDefault() : undefined}
+                      className={`flex items-center text-sm group transition-colors duration-200
+    ${project.demoUrl === "#"
+                        ? "text-gray-500 cursor-not-allowed"
+                        : "text-ocean-400 hover:text-ocean-300"
+                      }`}
                     >
                       <ExternalLink className="w-3 h-3 mr-1 group-hover:scale-110 transition-transform" />
                       Demo
                     </a>
+
                     <a 
                       href={project.githubUrl}
                       className="flex items-center text-white/70 hover:text-white transition-colors duration-200 text-sm group"
                     >
-                      <Github className="w-3 h-3 mr-1 group-hover:scale-110 transition-transform" />
+                      <FaGithub className="w-3 h-3 mr-1 group-hover:scale-110 transition-transform" />
                       Code
                     </a>
                   </div>

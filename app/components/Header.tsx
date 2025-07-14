@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { Menu, X } from 'lucide-react'
+import Image from "next/image";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -42,6 +43,14 @@ const Header = () => {
       <nav className="container mx-auto px-4 sm:px-6 lg:px-44">
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center space-x-3">
+            <Image
+              src="/favicon.ico"
+              alt="Logo"
+              width={40} // équivalent à sm:w-10 (40px)
+              height={40} // équivalent à sm:h-10 (40px)
+              className="h-8 w-8 sm:h-10 sm:w-10 object-contain"
+            />
+
             <h1 className="block sm:hidden text-2xl font-bold text-gradient">
               R. F. Mandresy
             </h1>
