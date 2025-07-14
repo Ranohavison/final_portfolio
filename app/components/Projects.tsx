@@ -10,24 +10,24 @@ const Projects = () => {
 
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "Full-featured e-commerce solution with advanced payment processing, real-time inventory management, and comprehensive admin dashboard. Built with modern architecture for scalability.",
-      image: "https://images.pexels.com/photos/4968964/pexels-photo-4968964.jpeg?auto=compress&cs=tinysrgb&w=800",
-      technologies: ["Next.js", "TypeScript", "PostgreSQL", "Stripe", "Redis"],
+      title: "Gestion d'Examen CEPE",
+      description: "Application simple et sécurisée pour la gestion des résultats du CEPE, permettant d’enregistrer, consulter et exporter les notes individuelles des élèves avec précision. Interface claire et efficace dédiée aux administrateurs.",
+      image: "/images/screenshoot_3.png",
+      technologies: ["Codeigniter", "Angular", "MySql", "TailwindCSS"],
       category: "fullstack",
       demoUrl: "#",
-      githubUrl: "#",
+      githubUrl: "https://github.com/Ranohavison/cepeProject",
       date: "2024",
       featured: true
     },
     {
-      title: "AI-Powered Analytics Dashboard",
+      title: "Gestion d'Employées",
       description: "Intelligent analytics platform with machine learning insights, real-time data visualization, and predictive analytics for business intelligence.",
-      image: "https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=800",
-      technologies: ["React", "Python", "TensorFlow", "D3.js", "AWS"],
+      image: "/images/employe_acceil.png",
+      technologies: ["Laravel", "VueJs", "MySql", "TailwindCSS", "Daisyui"],
       category: "frontend",
       demoUrl: "#",
-      githubUrl: "#",
+      githubUrl: "https://github.com/Ranohavison/vueJs_employe",
       date: "2024",
       featured: true
     },

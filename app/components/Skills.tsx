@@ -52,11 +52,11 @@ const Skills = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-20">
             <h2 className="text-4xl sm:text-5xl font-bold mb-6">
-              Technical <span className="text-gradient">Expertise</span>
+              Compétences <span className="text-gradient">Techniques</span>
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-primary-900 to-white mx-auto mb-8"></div>
             <p className="text-xl text-white/80 max-w-3xl mx-auto leading-relaxed">
-              Comprehensive skill set spanning modern web technologies and cloud platforms
+              Maîtrise progressive des technologies web modernes et des plateformes cloud.
             </p>
           </div>
 
@@ -111,20 +111,20 @@ const Skills = () => {
           <div className="mt-16 grid md:grid-cols-3 gap-8">
             <div className="glass-effect p-8 rounded-2xl text-center card-hover">
               <div className="text-4xl mb-4">🛠️</div>
-              <h4 className="text-xl font-bold text-white mb-4">Tools & Workflow</h4>
-              <p className="text-white/70">Git, VS Code, Figma, Postman, Jest, Cypress</p>
+              <h4 className="text-xl font-bold text-white mb-4">Outils & Méthodes</h4>
+              <p className="text-white/70">Git, VS Code, Figma, Postman, Cypress</p>
             </div>
             
             <div className="glass-effect p-8 rounded-2xl text-center card-hover">
               <div className="text-4xl mb-4">📱</div>
-              <h4 className="text-xl font-bold text-white mb-4">Mobile Development</h4>
-              <p className="text-white/70">React Native, Flutter, Progressive Web Apps</p>
+              <h4 className="text-xl font-bold text-white mb-4">Centres d’intérêt tech</h4>
+              <p className="text-white/70">Développement web front-end et back-end, Design UX/UI</p>
             </div>
             
             <div className="glass-effect p-8 rounded-2xl text-center card-hover">
               <div className="text-4xl mb-4">🤖</div>
-              <h4 className="text-xl font-bold text-white mb-4">Emerging Tech</h4>
-              <p className="text-white/70">AI/ML Integration, GraphQL, WebAssembly</p>
+              <h4 className="text-xl font-bold text-white mb-4">Soft Skills</h4>
+              <p className="text-white/70">Communication, travail en équipe, gestion du temps</p>
             </div>
           </div>
         </div>

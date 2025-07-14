@@ -6,35 +6,36 @@ const About = () => {
   const highlights = [
     {
       icon: <Code className="w-8 h-8" />,
-      title: "Frontend Mastery",
+      title: "Compétences Frontend",
       description: "React, Next.js, TypeScript, Tailwind CSS",
       color: "bg-ocean-600"
     },
     {
       icon: <Database className="w-8 h-8" />,
-      title: "Backend Excellence",
-      description: "Node.js, Python, PostgreSQL, MongoDB",
+      title: "Compétences Backend",
+      description: "Node.js, Python, PostgreSQL, MySQL",
       color: "bg-ocean-600"
     },
     {
       icon: <Globe className="w-8 h-8" />,
-      title: "Cloud Architecture",
-      description: "AWS, Docker, Kubernetes, Microservices",
+      title: "Cloud & DevOps",
+      // description: "AWS, Docker, Kubernetes, Microservices",
+      description: "Docker",
       color: "bg-ocean-600"
     },
     {
       icon: <Palette className="w-8 h-8" />,
       title: "UI/UX Design",
-      description: "User-centered design and prototyping",
+      description: "Design centré utilisateur et prototypage",
       color: "bg-ocean-600"
     }
   ]
 
   const stats = [
-    { number: "50+", label: "Projects Completed" },
-    { number: "5+", label: "Years Experience" },
-    { number: "20+", label: "Happy Clients" },
-    { number: "15+", label: "Technologies" }
+    { number: "10+", label: "Projets réalisés" },
+    { number: "1+", label: "Années d’expérience" },
+    { number: "4+", label: "Retours positifs" },
+    { number: "7+", label: "Technologies maîtrisées" }
   ]
 
   return (
@@ -45,11 +46,11 @@ const About = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-20">
             <h2 className="text-4xl sm:text-5xl font-bold mb-6">
-              About <span className="text-gradient">Me</span>
+              À propos de <span className="text-gradient">Moi</span>
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-primary-900 to-white mx-auto mb-8"></div>
             <p className="text-xl text-white/80 max-w-3xl mx-auto leading-relaxed">
-              Passionate about creating digital solutions that make a real impact
+              Passionné par la création de solutions digitales qui font vraiment la différence.
             </p>
           </div>
 
@@ -57,26 +58,19 @@ const About = () => {
             <div className="space-y-8">
               <div className="glass-effect p-8 rounded-2xl">
                 <h3 className="text-3xl font-bold mb-6 text-white">
-                  Full-Stack Developer & Problem Solver
+                  Full-Stack Developer Junior & Apprenant Passionné
                 </h3>
                 <div className="space-y-6 text-white/80 leading-relaxed">
                   <p>
-                    With over 5 years of experience in web development, I specialize in creating 
-                    robust, scalable applications that deliver exceptional user experiences. 
-                    My journey began with a curiosity for technology and has evolved into a 
-                    passion for crafting innovative digital solutions.
+                    Je suis actuellement en deuxième année de Génie Logiciel et Base de Données à ENI Fianarantsoa, où je découvre chaque jour un peu plus le monde passionnant du développement web. J’aime apprendre en pratiquant, que ce soit côté front-end ou back-end, et je m’efforce de créer des applications simples, efficaces et agréables à utiliser.
                   </p>
                   <p>
-                    I believe in writing clean, maintainable code and staying current with 
-                    emerging technologies. Whether building responsive frontends, designing 
-                    efficient APIs, or architecting cloud infrastructure, I approach each 
-                    project with meticulous attention to detail.
+                    Je fais attention à écrire un code clair et organisé, tout en explorant les nouvelles technologies qui font évoluer le métier. Chaque projet est pour moi un défi qui m’aide à progresser et à mieux comprendre les bonnes pratiques du développement.
                   </p>
                   <p>
-                    Beyond coding, I&apos;m passionate about mentoring developers, contributing to
-                    open-source projects, and sharing knowledge with the tech community.
+                    Au-delà du code, j’apprécie travailler en équipe, échanger des idées et construire des solutions qui ont du sens, prêt à apporter ma motivation et mon envie d’apprendre dans un environnement professionnel.
                   </p>
-                </div>à
+                </div>
               </div>
 
               {/* Stats */}
@@ -113,18 +107,18 @@ const About = () => {
             <div className="grid md:grid-cols-3 gap-8 text-center">
               <div className="flex flex-col items-center">
                 <Award className="w-12 h-12 text-ocean-300 mb-4" />
-                <h4 className="text-lg font-semibold text-white mb-2">Certified Professional</h4>
-                <p className="text-white/70">AWS Solutions Architect & Google Cloud Professional</p>
+                <h4 className="text-lg font-semibold text-white mb-2">Compétences techniques</h4>
+                <p className="text-white/70">Progression en cloud, développement web et bases de données.</p>
               </div>
               <div className="flex flex-col items-center">
                 <Users className="w-12 h-12 text-ocean-300 mb-4" />
-                <h4 className="text-lg font-semibold text-white mb-2">Team Leadership</h4>
-                <p className="text-white/70">Led cross-functional teams of 5-10 developers</p>
+                <h4 className="text-lg font-semibold text-white mb-2">Travail en équipe</h4>
+                <p className="text-white/70">Participation active à des projets en groupe (2 à 5 membres).</p>
               </div>
               <div className="flex flex-col items-center">
                 <Globe className="w-12 h-12 text-ocean-300 mb-4" />
-                <h4 className="text-lg font-semibold text-white mb-2">Global Impact</h4>
-                <p className="text-white/70">Applications serving 1M+ users worldwide</p>
+                <h4 className="text-lg font-semibold text-white mb-2">Impact</h4>
+                <p className="text-white/70">Création d’applications utiles avec l’ambition de toucher toujours plus d’utilisateurs.</p>
               </div>
             </div>
           </div>
