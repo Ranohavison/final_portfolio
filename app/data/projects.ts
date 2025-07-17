@@ -45,12 +45,12 @@ export const projects: Project[] = [
     title: "Gestion de bibliothèque",
     description:
       "Gérez facilement auteurs, membres et ouvrages grâce à une application intuitive qui révolutionne la gestion de votre bibliothèque.",
-    image: "/images/employe_acceil.png",
+    image: "/images/biblioApp.jpeg",
     technologies: ["Qt", "C++", "MySql"],
     category: "fullstack",
     demoUrl: "#",
     githubUrl: "https://github.com/Ranohavison/",
-    date: "2024",
+    date: "2023",
     featured: false,
   },
 ];

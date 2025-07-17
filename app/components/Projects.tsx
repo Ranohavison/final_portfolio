@@ -207,12 +207,12 @@ const Projects = () => {
           </div>
 
           {/* View More */}
-          <div className="text-center mt-16">
-            <button className="inline-flex items-center px-8 py-4 glass-effect text-white font-semibold rounded-lg hover:bg-white/10 transition-all duration-300 group">
-              View All Projects
-              <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
-            </button>
-          </div>
+          {/*<div className="text-center mt-16">*/}
+          {/*  <button className="inline-flex items-center px-8 py-4 glass-effect text-white font-semibold rounded-lg hover:bg-white/10 transition-all duration-300 group">*/}
+          {/*    Tous les projets*/}
+          {/*    <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />*/}
+          {/*  </button>*/}
+          {/*</div>*/}
         </div>
       </div>
     </section>
