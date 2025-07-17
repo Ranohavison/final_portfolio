@@ -3,15 +3,12 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  /*--font-geist-sans: 'Geist Sans', sans-serif;*/
-  /*--font-geist-mono: 'Geist Mono', monospace;*/
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  /*--font-dmserif: var(--font-dmserif);*/
-  /*--font-myfont: var(--font-myfont);*/
+  --breakpoint-xs: 20rem;
 
   --color-ocean-50: #f0f9ff;
   --color-ocean-100: #e0f2fe;
