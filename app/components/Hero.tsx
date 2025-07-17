@@ -31,7 +31,7 @@ const Hero = () => {
             </h1>
 
             <div className="max-w-4xl mx-auto mb-8 sm:mb-12">
-              <p className="text-3xl sm:text-4xl text-white/90 mb-4 font-light">
+              <p className="text-2xl sm:text-4xl text-white/90 mb-4 font-light">
                 Développeur Full-Stack Junior
               </p>
               <p className="text-xl md:text-2xl text-white/75 mb-6 leading-relaxed">
