@@ -23,7 +23,7 @@ const Hero = () => {
         <div className="text-center animate-fade-in">
           <div className="mb-8">
 
-            <h1 className="text-7xl lg:text-8xl font-bold mb-8 sm:mb-12">
+            <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold mb-8 sm:mb-12">
               <span className="block text-white mb-2"> Bonjour, je suis</span>
               <span className="block text-gradient animate-pulse">
                 Ranohavison Mandresy
@@ -31,20 +31,20 @@ const Hero = () => {
             </h1>
 
             <div className="max-w-4xl mx-auto mb-8 sm:mb-12">
-              <p className="text-4xl text-white/90 mb-4 font-light">
+              <p className="text-3xl sm:text-4xl text-white/90 mb-4 font-light">
                 Développeur Full-Stack Junior
               </p>
-              <p className="text-2xl text-white/70 mb-6 leading-relaxed">
+              <p className="text-xl sm:text-2xl text-white/75 mb-6 leading-relaxed">
                 Je conçois des expériences numériques exceptionnelles grâce aux technologies modernes. Spécialisé en React, Next.js, Node.js et architecture cloud.
               </p>
-              <p className="text-2xl text-white/60 max-w-2xl mx-auto">
+              <p className="text-xl sm:text-2xl text-white/75 max-w-2xl mx-auto">
                 Passionné par la création d’applications performantes, d’interfaces élégantes et de systèmes backend robustes qui ont un réel impact.
               </p>
             </div>
           </div>
 
           {/* CTA Buttons */}
-          <div className="flex flex-row gap-6 justify-center mb-7 sm:mb-16 text-xl animate-slide-up">
+          <div className="flex flex-row gap-6 justify-center mb-10 sm:mb-16 text-xl animate-slide-up">
             <button
               onClick={() => scrollToSection('#projects')}
               className="btn-primary ocean-glow"
@@ -84,7 +84,7 @@ const Hero = () => {
           {/* Scroll indicator */}
           <button
             onClick={scrollToNext}
-            className="absolute bottom-[0.01rem] hidden sm:block left-1/2 transform -translate-x-1/2 text-white/60 hover:text-white transition-all duration-300 animate-bounce group"
+            className="absolute bottom-[0.01rem] hidden [width >= 10rem]:block left-1/2 transform -translate-x-1/2 text-white/60 hover:text-white transition-all duration-300 animate-bounce group"
           >
             <div className="flex flex-col items-center">
               <span className="text-sm mb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200">Scroll Down</span>

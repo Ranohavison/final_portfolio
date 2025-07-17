@@ -2,8 +2,8 @@
 
 import { useState } from 'react'
 import {skillCategories} from "@/app/data/skills";
-import {FaTools} from "react-icons/fa";
-import {MdPhoneAndroid, MdSmartToy} from "react-icons/md";
+import {FaHandsHelping, FaTools} from "react-icons/fa";
+import {FaLaptopCode} from "react-icons/fa6";
 
 const Skills = () => {
   const [activeCategory, setActiveCategory] = useState(0)
@@ -80,13 +80,13 @@ const Skills = () => {
             </div>
             
             <div className="glass-effect p-8 rounded-2xl text-center card-hover">
-              <div className="flex justify-center text-4xl text-ocean-400 mb-4"><MdPhoneAndroid  size={30}/></div>
+              <div className="flex justify-center text-4xl text-ocean-400 mb-4"><FaLaptopCode size={30}/></div>
               <h4 className="text-xl font-bold text-white mb-4">Centres d’intérêt tech</h4>
               <p className="text-white/70">Développement web front-end et back-end, Design UX/UI</p>
             </div>
             
             <div className="glass-effect p-8 rounded-2xl text-center card-hover">
-              <div className="flex justify-center text-4xl text-ocean-400 mb-4"><MdSmartToy size={30} /></div>
+              <div className="flex justify-center text-4xl text-ocean-400 mb-4"><FaHandsHelping size={30} /></div>
               <h4 className="text-xl font-bold text-white mb-4">Soft Skills</h4>
               <p className="text-white/70">Communication, travail en équipe, gestion du temps</p>
             </div>
