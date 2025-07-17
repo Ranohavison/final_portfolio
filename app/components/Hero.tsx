@@ -13,7 +13,7 @@ const Hero = () => {
   }
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-32">
+    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-16 sm:pt-32">
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <BackgroundGradientAnimation />
@@ -23,7 +23,7 @@ const Hero = () => {
         <div className="text-center animate-fade-in">
           <div className="mb-8">
 
-            <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-8 sm:mb-12">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-8 sm:mb-12">
               <span className="block text-white mb-2"> Bonjour, je suis</span>
               <span className="block text-gradient animate-pulse">
                 Ranohavison Mandresy
@@ -47,10 +47,17 @@ const Hero = () => {
           <div className="flex flex-row gap-6 justify-center mb-8 sm:mb-10 text-xl animate-slide-up">
             <button
               onClick={() => scrollToSection('#projects')}
-              className="btn-primary ocean-glow"
+              className="hidden sm:inline-block btn-primary ocean-glow"
             >
               Mes projets
             </button>
+            <button
+              onClick={() => scrollToSection('#projects')}
+              className="inline-block sm:hidden btn-primary ocean-glow"
+            >
+              Projets
+            </button>
+
             <button
               onClick={() => scrollToSection('#contact')}
               className="btn-secondary hidden"
@@ -59,7 +66,8 @@ const Hero = () => {
             </button>
             <a href={"/fichiers/CV.pdf"} className="flex items-center justify-center px-6 py-4 glass-effect text-white font-medium text-xl rounded-lg hover:bg-white/10 transition-all duration-300" download>
               <Download className="w-5 h-5 mr-2" />
-              Telecharger CV
+              <span className="hidden sm:inline">Télécharger CV</span>
+              <span className="sm:hidden">CV</span>
             </a>
           </div>
 
