@@ -66,7 +66,7 @@ const Header = () => {
                 <button
                   key={item.href}
                   onClick={() => scrollToSection(item.href)}
-                  className="text-white/80 hover:text-white px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 hover:bg-white/10 relative group"
+                  className="text-white/80 hover:text-white px-4 py-2 rounded-lg text-md font-medium transition-all duration-300 hover:bg-white/10 relative group"
                 >
                   {item.label}
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-ocean-400 to-white transition-all duration-300 group-hover:w-full"></span>
