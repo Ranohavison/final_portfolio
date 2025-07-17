@@ -13,7 +13,7 @@ const Hero = () => {
   }
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-16 sm:pt-32">
+    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-24 sm:pt-32">
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <BackgroundGradientAnimation />
