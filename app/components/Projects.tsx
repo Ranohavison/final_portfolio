@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { ExternalLink, Calendar, ArrowRight } from 'lucide-react'
+import { ExternalLink, Calendar } from 'lucide-react'
 import Image from 'next/image'
 import {filters, projects} from "@/app/data/projects";
 import {FaGithub} from "react-icons/fa";
