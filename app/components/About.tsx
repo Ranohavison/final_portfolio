@@ -108,7 +108,7 @@ const About = () => {
               <div className="flex flex-col items-center">
                 <Award className="w-12 h-12 text-ocean-300 mb-4" />
                 <h4 className="text-lg font-semibold text-white mb-2">Compétences techniques</h4>
-                <p className="text-white/70">Progression en cloud, développement web et bases de données.</p>
+                <p className="text-white/70">Progression en développement web et bases de données.</p>
               </div>
               <div className="flex flex-col items-center">
                 <Users className="w-12 h-12 text-ocean-300 mb-4" />

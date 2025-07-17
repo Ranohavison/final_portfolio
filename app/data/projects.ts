@@ -51,7 +51,7 @@ export const projects: Project[] = [
     demoUrl: "#",
     githubUrl: "https://github.com/Ranohavison/",
     date: "2024",
-    featured: true,
+    featured: false,
   },
 ];
 
