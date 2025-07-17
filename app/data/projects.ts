@@ -20,10 +20,10 @@ export const projects: Project[] = [
   {
     title: "Gestion d'Examen CEPE",
     description:
-      "Application simple et sécurisée pour la gestion des résultats du CEPE...",
+      "Application simple et sécurisée pour la gestion des résultats du CEPE.",
     image: "/images/screenshoot_3.png",
     technologies: ["Codeigniter", "Angular", "MySql", "TailwindCSS"],
-    category: "fullstack",
+    category: "backend",
     demoUrl: "#",
     githubUrl: "https://github.com/Ranohavison/cepeProject",
     date: "2024",
@@ -32,12 +32,24 @@ export const projects: Project[] = [
   {
     title: "Gestion d'Employées",
     description:
-      "Plateforme d'analyse intelligente avec visualisation en temps réel...",
+      "Plateforme d'analyse et de gestion intelligente d'employées avec visualisation en temps réel.",
     image: "/images/employe_acceil.png",
     technologies: ["Laravel", "VueJs", "MySql", "TailwindCSS", "Daisyui"],
     category: "fullstack",
     demoUrl: "#",
     githubUrl: "https://github.com/Ranohavison/vueJs_employe",
+    date: "2024",
+    featured: true,
+  },
+  {
+    title: "Gestion de bibliothèque",
+    description:
+      "Gérez facilement auteurs, membres et ouvrages grâce à une application intuitive qui révolutionne la gestion de votre bibliothèque.",
+    image: "/images/employe_acceil.png",
+    technologies: ["Qt", "C++", "MySql"],
+    category: "fullstack",
+    demoUrl: "#",
+    githubUrl: "https://github.com/Ranohavison/",
     date: "2024",
     featured: true,
   },
