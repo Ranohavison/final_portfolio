@@ -49,7 +49,7 @@ export const projects: Project[] = [
     technologies: ["Qt", "C++", "MySql"],
     category: "fullstack",
     demoUrl: "#",
-    githubUrl: "https://github.com/Ranohavison/",
+    githubUrl: "https://github.com/Ranohavison/biblioApp_qt",
     date: "2023",
     featured: false,
   },
