@@ -35,10 +35,10 @@ const Hero = () => {
               <p className="text-2xl sm:text-4xl text-white/90 mb-4 font-light">
                 Développeur Full-Stack Junior
               </p>
-              <p className="text-xl md:text-2xl text-white/75 mb-6 leading-relaxed">
+              <p className="text-md xs:text-xl md:text-2xl text-white/75 mb-6 leading-relaxed">
                 Je conçois des expériences numériques exceptionnelles grâce aux technologies modernes. Spécialisé en React, Next.js, Node.js et architecture cloud.
               </p>
-              <p className="text-xl md:text-2xl text-white/75 max-w-2xl mx-auto">
+              <p className="text-md xs:text-xl md:text-2xl text-white/75 max-w-2xl mx-auto">
                 Passionné par la création d’applications performantes, d’interfaces élégantes et de systèmes backend robustes qui ont un réel impact.
               </p>
             </div>
@@ -65,7 +65,7 @@ const Hero = () => {
             >
               Get In Touch
             </button>
-            <a href={"/fichiers/CV.pdf"} className="flex items-center justify-center px-6 py-4 glass-effect text-white font-medium text-lg sm:text-xl rounded-lg hover:bg-white/10 transition-all duration-300" download>
+            <a href={"/fichiers/CV.pdf"} className="flex items-center justify-center px-6 py-1 sm:py-4 glass-effect text-white font-medium text-lg sm:text-xl rounded-lg hover:bg-white/10 transition-all duration-300" download>
               <Download className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
               <span className="hidden sm:inline">Télécharger CV</span>
               <span className="sm:hidden">CV</span>
@@ -82,7 +82,7 @@ const Hero = () => {
               <a
                 key={index}
                 href={social.href}
-                className="p-4 glass-effect rounded-full text-white/70 hover:text-white transition-all duration-300 hover:scale-110 hover:bg-white/10 group"
+                className="sm:p-4 glass-effect rounded-full text-white/70 hover:text-white transition-all duration-300 hover:scale-110 hover:bg-white/10 group"
                 aria-label={social.label}
               >
                 <social.icon size={24} className="group-hover:scale-110 transition-transform duration-200" />
