@@ -23,11 +23,11 @@ const Projects = () => {
       <div className="w-full px-4 sm:px-12 md:px-20 xl:px-28 2xl:px-80 relative z-10">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-20">
-            <h2 className="text-4xl sm:text-5xl font-bold mb-6">
+            <h2 className="text-2xl xs:text-3xl sm:text-5xl font-bold mb-6">
               Projets <span className="text-gradient">Phare</span>
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-primary-900 to-white mx-auto mb-8"></div>
-            <p className="text-xl text-white/80 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-lg sm:text-xl text-white/80 max-w-3xl mx-auto leading-relaxed">
               Présentation des solutions innovantes et des réalisations techniques marquantes
             </p>
           </div>
