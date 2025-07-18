@@ -1,7 +1,9 @@
 'use client'
 
-import { useState } from 'react'
-import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter, MessageCircle } from 'lucide-react'
+import React, { useState } from 'react'
+import { Mail, Phone, MapPin, Send, MessageCircle } from 'lucide-react'
+import {FaGithub} from "react-icons/fa";
+import {FaLinkedin, FaTwitter} from "react-icons/fa6";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -60,19 +62,19 @@ const Contact = () => {
 
   const socialLinks = [
     { 
-      icon: <Github className="w-6 h-6" />, 
+      icon: <FaGithub className="w-6 h-6" />,
       label: "GitHub", 
-      url: "#",
+      url: "https://github.com/Ranohavison",
       color: "hover:bg-gray-700"
     },
     { 
-      icon: <Linkedin className="w-6 h-6" />, 
+      icon: <FaLinkedin className="w-6 h-6" />,
       label: "LinkedIn", 
       url: "#",
       color: "hover:bg-blue-600"
     },
     { 
-      icon: <Twitter className="w-6 h-6" />, 
+      icon: <FaTwitter className="w-6 h-6" />,
       label: "Twitter", 
       url: "#",
       color: "hover:bg-sky-500"
@@ -89,7 +91,7 @@ const Contact = () => {
     <section id="contact" className="py-24 relative">
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/20 to-transparent"></div>
       
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="w-full px-4 sm:px-12 md:px-20 xl:px-28 2xl:px-80 relative z-10">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-20">
             <h2 className="text-4xl sm:text-5xl font-bold mb-6">

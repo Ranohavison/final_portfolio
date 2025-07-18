@@ -1,7 +1,8 @@
 'use client'
 
-import { ArrowDown, Github, Linkedin, Mail, Download } from 'lucide-react'
+import { ArrowDown, Download } from 'lucide-react'
 import {BackgroundGradientAnimation} from "@/app/ui/background-gradient-animation";
+import {FiGithub, FiLinkedin, FiMail} from "react-icons/fi";
 // import { motion } from "motion/react"
 
 const Hero = () => {
@@ -19,7 +20,7 @@ const Hero = () => {
         <BackgroundGradientAnimation />
       </div>
 
-      <div className="container mx-auto px-6 lg:px-8 relative z-10">
+      <div className="w-full px-4 sm:px-12 md:px-20 xl:px-28 2xl:px-80 relative z-10">
         <div className="text-center animate-fade-in">
           <div className="mb-8">
 
@@ -44,7 +45,7 @@ const Hero = () => {
           </div>
 
           {/* CTA Buttons */}
-          <div className="flex flex-row gap-6 justify-center mb-8 sm:mb-10 text-xl animate-slide-up">
+          <div className="flex flex-row gap-6 justify-center mb-8 sm:mb-10 text-lg sm:text-xl animate-slide-up">
             <button
               onClick={() => scrollToSection('#projects')}
               className="hidden sm:inline-block btn-primary ocean-glow"
@@ -64,8 +65,8 @@ const Hero = () => {
             >
               Get In Touch
             </button>
-            <a href={"/fichiers/CV.pdf"} className="flex items-center justify-center px-6 py-4 glass-effect text-white font-medium text-xl rounded-lg hover:bg-white/10 transition-all duration-300" download>
-              <Download className="w-5 h-5 mr-2" />
+            <a href={"/fichiers/CV.pdf"} className="flex items-center justify-center px-6 py-4 glass-effect text-white font-medium text-lg sm:text-xl rounded-lg hover:bg-white/10 transition-all duration-300" download>
+              <Download className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
               <span className="hidden sm:inline">Télécharger CV</span>
               <span className="sm:hidden">CV</span>
             </a>
@@ -74,14 +75,14 @@ const Hero = () => {
           {/* Social Links */}
           <div className="flex justify-center space-x-8 mb-12 animate-slide-up" style={{ animationDelay: '0.2s' }}>
             {[
-              { icon: Github, href: '#', label: 'GitHub' },
-              { icon: Linkedin, href: '#', label: 'LinkedIn' },
-              { icon: Mail, href: '#', label: 'Email' },
+              { icon: FiGithub, href: 'https://github.com/Ranohavison', label: 'GitHub' },
+              { icon: FiLinkedin, href: 'www.linkedin.com/in/ranohavison-ranohavison-fortunah-mandresy-488040375', label: 'LinkedIn' },
+              { icon: FiMail, href: 'mailto:ranohavison399@gmail.com', label: 'Email' },
             ].map((social, index) => (
               <a
                 key={index}
                 href={social.href}
-                className="p-4 text-sm glass-effect rounded-full text-white/70 hover:text-white transition-all duration-300 hover:scale-110 hover:bg-white/10 group"
+                className="p-4 glass-effect rounded-full text-white/70 hover:text-white transition-all duration-300 hover:scale-110 hover:bg-white/10 group"
                 aria-label={social.label}
               >
                 <social.icon size={24} className="group-hover:scale-110 transition-transform duration-200" />
