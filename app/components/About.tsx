@@ -5,26 +5,26 @@ import { Code, Palette, Database, Globe, Award, Users } from 'lucide-react'
 const About = () => {
   const highlights = [
     {
-      icon: <Code className="w-8 h-8" />,
+      icon: <Code className="w-6 h-6" />,
       title: "Compétences Frontend",
       description: "React, Next.js, TypeScript, Tailwind CSS",
       color: "bg-ocean-600"
     },
     {
-      icon: <Database className="w-8 h-8" />,
+      icon: <Database className="w-6 h-6" />,
       title: "Compétences Backend",
       description: "Node.js, Python, PostgreSQL, MySQL",
       color: "bg-ocean-600"
     },
     {
-      icon: <Globe className="w-8 h-8" />,
+      icon: <Globe className="w-6 h-6" />,
       title: "Cloud & DevOps",
       // description: "AWS, Docker, Kubernetes, Microservices",
       description: "Docker",
       color: "bg-ocean-600"
     },
     {
-      icon: <Palette className="w-8 h-8" />,
+      icon: <Palette className="w-6 h-6" />,
       title: "UI/UX Design",
       description: "Design centré utilisateur et prototypage",
       color: "bg-ocean-600"
@@ -42,7 +42,7 @@ const About = () => {
     <section id="about" className="py-24 relative">
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/20 to-transparent"></div>
       
-      <div className="w-full px-4 sm:px-12 md:px-20 xl:px-28 2xl:px-80 relative z-10">
+      <div className="w-full px-4 sm:px-12 md:px-20 xl:px-44 2xl:px-80 relative z-10">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-20">
             <h2 className="text-2xl xs:text-3xl sm:text-5xl font-bold mb-6">
@@ -76,8 +76,8 @@ const About = () => {
               {/* Stats */}
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
                 {stats.map((stat, index) => (
-                  <div key={index} className="glass-effect p-6 rounded-xl text-center card-hover">
-                    <div className="text-2xl font-bold text-gradient mb-2">{stat.number}</div>
+                  <div key={index} className="glass-effect p-4 rounded-xl text-center card-hover">
+                    <div className="text-xl font-bold text-gradient mb-2">{stat.number}</div>
                     <div className="text-white/70 text-sm">{stat.label}</div>
                   </div>
                 ))}
@@ -90,13 +90,13 @@ const About = () => {
                   key={index}
                   className="glass-effect p-8 rounded-2xl card-hover group"
                 >
-                  <div className={`inline-flex p-4 rounded-xl bg-gradient-to-r ${item.color} mb-6 group-hover:scale-110 transition-transform duration-300`}>
+                  <div className={`inline-flex p-4 rounded-xl bg-gradient-to-r ${item.color} mb-5 group-hover:scale-110 transition-transform duration-300`}>
                     <div className="text-ocean-950">
                       {item.icon}
                     </div>
                   </div>
-                  <h4 className="text-xl font-bold mb-4 text-white">{item.title}</h4>
-                  <p className="text-white/70 leading-relaxed">{item.description}</p>
+                  <h4 className="text-xl font-bold mb-1 text-white">{item.title}</h4>
+                  <p className="text-white/70 leading-relaxed text-sm">{item.description}</p>
                 </div>
               ))}
             </div>

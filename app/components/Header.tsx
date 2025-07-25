@@ -40,7 +40,7 @@ const Header = () => {
         ? 'glass-effect shadow-2xl' 
         : 'bg-transparent'
     }`}>
-      <nav className="w-full px-4 sm:px-12 md:px-20 xl:px-28 2xl:px-80">
+      <nav className="w-full px-4 sm:px-12 md:px-20 xl:px-44 2xl:px-80">
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center space-x-3">
             <Image
