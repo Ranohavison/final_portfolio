@@ -51,10 +51,10 @@ const Header = () => {
               className="h-8 w-8 sm:h-10 sm:w-10 object-contain"
             />
 
-            <h1 className="block xl:hidden text-2xl font-bold text-gradient">
+            <h1 className="block xl:hidden text-xl font-bold text-gradient">
               R. F. Mandresy
             </h1>
-            <h1 className="hidden xl:block text-2xl font-bold text-gradient">
+            <h1 className="hidden xl:block text-xl font-bold text-gradient">
               Ranohavison Fortunah Mandresy
             </h1>
           </div>
